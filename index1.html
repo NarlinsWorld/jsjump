@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>East Coast Thistle Regatta</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Thistle sailing regatta east coast championship.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="Img/BrightThistleLogo.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="Img/Apple_burghee.png">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script>MathJax = {tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    </head>
+    <body>
+
+
+        <div class="container">
+
+
+
+            <div id="breset"> <!-- button reset -->
+                <button onclick="resetFunc()" id="reset1">RESET </button>
+                <button type="button" data-toggle="modal" data-target="#myModal">Directions</button>
+            </div>
+
+            <!-- Directions for Match Racing -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Scratch List</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+
+                                <span style='font-weight: bold'>Before running a 2nd race, push the RESET button at the bottom of the page.</span>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>        
+
+
+        <script src="scripts/scratchList.js"></script>
+    </body>
+</html>

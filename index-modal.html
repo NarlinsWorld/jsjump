@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portsmouth Match Racing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+        <link rel="stylesheet" type="text/css" href="style1.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+
+
+            <div id="breset"> <!-- button reset -->
+
+                <button type="button" data-toggle="modal" data-target="#myModal">Directions</button>
+            </div>
+            <div>
+                There aren't many rules about modals, but doing it this way, 
+                you have to be really careful about the header files. The following
+                header directives have to be in this order.
+                <ol>
+                    <li><code style='color: black;'> &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></code></li>
+                    <li><code style='color: black;'> &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">&lt;/script></code></li>
+                    <li> <code style='color: black;'>  &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">&lt;/script></code></li>
+                    <li> <code style='color: black;'>  &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">&lt;/script></code></li>
+                </ol>
+            </div>
+
+            <!-- Directions for Match Racing -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Run a Match Race: 2 Boats</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                1) Set the name or owner for each boat. (Any time even during race)<br>
+                                2) Set the dp-n for each boat.<br>
+                                3) Real time is always displayed at the top of the page.<br>
+                                4) Start a race by pressing START.<br>
+                                5) Upon pressing START:<br> 
+                                &nbsp; a) the race start time will be displayed<br>
+                                &nbsp; b) Elapsed Time is just under the starting time <br>
+                                &nbsp; c) corrected time (CTA and CTB) for both boats is diplayed.<br>                
+                                6) When the 1st boat (either A or B) gets to the 1st mark, press Btn for that split and boat.<br>
+                                &nbsp; a) Elapsed Time at the moment of Btn press is displayed.<br>
+                                &nbsp; b) Corrected Time at the moment of Btn press is displayed. <br>
+                                7) When the 2nd boat gets to the same mark, press Btn for that boat.<br>
+                                8) When a split has been pressed for both boats, the difference |A-B| and boat in front will appear.<br>
+                                9) All splits work the same.  The finish is just another split with a different label.<br>
+
+                                <span style='font-weight: bold'>Before running a 2nd race, push the RESET button at the bottom of the page.</span>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="sketch1.js"></script>
+    </body>
+</html>

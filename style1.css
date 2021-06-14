@@ -1,0 +1,122 @@
+.b {
+    padding: .1em;
+    border: 2px solid #ff00ff;
+    font: inherit;
+    color: black;
+    border-radius: 3px;
+    font-size: 1.0em;
+    background-color: white;
+    /* show a hand cursor on hover; some argue that we
+    should keep the default arrow cursor for buttons */
+    cursor: pointer;
+}
+#header {
+    width: 100%;
+    background-color: red;
+    height: 40px;
+    color: white;
+    text-align:center;
+    margin: 0px auto 0px auto;
+
+}
+table#recTable {
+    width:100%; 
+
+}
+#recTable tr td {
+    height:35px; 
+
+ 
+}
+#recTable2 tr td {
+    padding: 0px;
+    height:35px; 
+    border: none;
+    text-align: center;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.c1 {
+    background-color: blue;
+    color: white;
+    
+}
+.c2 {
+    background-color: green;
+    color: white;
+    
+}
+.c3 {
+    background-color: #000062;
+    color: white;
+    
+}
+
+th.c4{
+    background-color: purple;
+    color: white;
+    height: 10px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: center;
+}
+
+.titName {
+    margin-top: 0px;
+    font-size: x-large;
+    color: white;
+}
+.resizedTextbox { /*input for DP-N to make it bigger */
+    width: 50px; 
+    height: 33px; 
+    font-size: large; 
+    padding: 0px;
+    color: white;
+    background-color: blue;
+}
+.resizedTextbox2 { /*input for DP-N boat B */
+    width: 50px; 
+    height: 30px; 
+    font-size: large; 
+    padding: 1px;
+    color: white;
+    background-color: green;
+}
+.strtBtn {
+    background-color: #000062;
+    color: white;
+    text-align: center;
+}
+td#Timer {
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+td#eT {
+    text-align: center;
+}
+
+.tab { 
+    display:inline-block; 
+}
+/* Remove the spin buttons from DP-N setters
+ Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Remove the spin buttons from DP-N setters
+ Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
